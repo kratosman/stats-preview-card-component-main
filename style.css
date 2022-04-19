@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-blue-main-background: hsl(233, 47%, 7%);
+    --dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+    --soft-violet-accent: hsl(277, 64%, 61%);
+    --white-main-heading-stats: hsl(0, 0%, 100%);
+    --slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --slighty-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+    --font-size: 15px;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --font-inter: 'Inter', sans-serif;
+    --font-lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: var(--very-dark-blue-main-background);
+}
+
+.wrapper-row {
+    background-color: var(--dark-desaturated-blue-card-background);
+    width: 1109px;
+    height: 445px;
+    margin-inline: auto;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+
+.wrapper-row .row {
+    display: flex;
+}
+
+.col-m1 {
+    background: var(--soft-violet-accent);
+    width: 539px;
+    height: 445px;
+    border-radius: 0 7px 7px 0;
+}
+
+.col-m1 img {
+    background: var(--soft-violet-accent);
+    width: 539px;
+    height: 445px;
+    border-radius: 0 7px 7px 0;
+    opacity: 0.5;
+}
+
+.col-m2 {
+    padding: 72px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.ratings {
+    margin-top: 75px;
+    display: flex;
+    gap: 66px;
+}
+
+.grid-row h1 {
+    font-family: var(--font-inter);
+    color: white;
+    font-size: 35px;
+}
+
+.grid-row h1 span {
+    color: var(--soft-violet-accent);
+}
+
+.paragraph {
+    font-family: var(--font-lexend-deca);
+    color: var(--slightly-transparent-white-main-paragraph);
+}
+
+.ratings .companies h2 {
+    font-family: var(--font-inter);
+    color: white;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.templates h2 {
+    font-family: var(--font-inter);
+    color: white;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.queries h2 {
+    font-family: var(--font-inter);
+    color: white;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.ratings .companies,
+.templates,
+.queries p {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    color: var(--slightly-transparent-white-main-paragraph);
+    text-transform: uppercase;
+}
+
+@media(max-width:500px) {
+    .wrapper-row {
+        background-color: var(--dark-desaturated-blue-card-background);
+        width: 420px;
+        height: 820px;
+        margin-inline: auto;
+        margin-top: 50px;
+        border-radius: 7px;
+    }
+    .wrapper-row .row {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+    .col-m1 {
+        background: var(--soft-violet-accent);
+        width: 420px;
+        height: 260px;
+        border-radius: 7px 7px 0 0;
+    }
+    .col-m1 img {
+        width: 420px;
+        height: 260px;
+        border-radius: 7px 7px 0 0;
+    }
+    .ratings {
+        margin-top: 75px;
+        display: flex;
+        gap: 66px;
+    }
+    .grid-row h1 {
+        text-align: center;
+        font-family: var(--font-inter);
+        color: white;
+        width: 327px;
+        font-size: 35px;
+    }
+    .grid-row h1 span {
+        color: var(--soft-violet-accent);
+    }
+    .col-m2 {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .paragraph {
+        font-family: var(--font-lexend-deca);
+        color: var(--slightly-transparent-white-main-paragraph);
+        text-align: center;
+        font-size: 18px;
+        width: 330px;
+    }
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        gap: 25px;
+    }
+    .ratings .companies {
+        text-align: center;
+    }
+    .templates {
+        text-align: center;
+    }
+    .queries {
+        text-align: center;
+    }
+}
+
+@media(max-width:375px) {
+    .wrapper-row {
+        background-color: var(--dark-desaturated-blue-card-background);
+        width: 327px;
+        height: 820px;
+        margin-inline: auto;
+        margin-top: 50px;
+        border-radius: 7px;
+    }
+    .wrapper-row .row {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+    .col-m1 {
+        background: var(--soft-violet-accent);
+        width: 327px;
+        height: 260px;
+        border-radius: 7px 7px 0 0;
+    }
+    .col-m1 img {
+        width: 327px;
+        height: 260px;
+        border-radius: 7px 7px 0 0;
+    }
+    .ratings {
+        margin-top: 75px;
+        display: flex;
+        gap: 66px;
+    }
+    .grid-row h1 {
+        text-align: center;
+        font-family: var(--font-inter);
+        color: white;
+        width: 300px;
+        font-size: 30px;
+    }
+    .grid-row h1 span {
+        color: var(--soft-violet-accent);
+    }
+    .col-m2 {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .paragraph {
+        font-family: var(--font-lexend-deca);
+        color: var(--slightly-transparent-white-main-paragraph);
+        text-align: center;
+        font-size: 16px;
+        width: 295px;
+    }
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        gap: 50px;
+    }
+    .ratings .companies {
+        text-align: center;
+    }
+    .templates {
+        text-align: center;
+    }
+    .queries {
+        text-align: center;
+    }
+}
